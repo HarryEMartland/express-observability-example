@@ -1,0 +1,10 @@
+version: '3'
+services:
+  book-list:
+    image: node:13-alpine
+    command: npm start
+    working_dir: /home/node/app
+    volumes: 
+      - ./:/home/node/app
+    ports: 
+        - "3000:3000"
